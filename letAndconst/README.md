@@ -5,8 +5,7 @@
     }
     console.log('aaa');
     console.log(i); // i is not defined
-#### 上面代码中，计数器i只在for循环体内有效，在循环体外引用就会报错。
-#### 如下var代码：
+#### 上面代码中，计数器i只在for循环体内有效，在循环体外引用就会报错。如下var代码：
     var a = [];
     for (var i = 0; i < 10; i++) {
       a[i] = function() {
@@ -74,7 +73,6 @@
     } 
     f1()
 #### 上面的代码有2个代码块，都声明了变量n，运行后输出5，说明了外层代码块不受内层代码块的影响，如果使用了变量var，那么输出的就是10；
-
 ### 二：const命令
 #### const 声明一个只读的常量，一旦声明，常量的值就不允许改变。如下代码：
     const a = 1; 
@@ -90,7 +88,6 @@
 ### 2-2 不可重复声明 (和let一样)
     var message = "Hello!";
     let age = 25;
-
     // 以下两行都会报错
     const message = "Goodbye!";
     const age = 30;
